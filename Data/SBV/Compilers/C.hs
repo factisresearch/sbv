@@ -14,6 +14,8 @@
 
 module Data.SBV.Compilers.C(compileToC, compileToCLib, compileToC', compileToCLib') where
 
+import Prelude hiding ((<>))
+
 import Control.DeepSeq                (rnf)
 import Data.Char                      (isSpace)
 import Data.List                      (nub, intercalate)
